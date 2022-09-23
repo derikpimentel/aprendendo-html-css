@@ -12,6 +12,11 @@
     Virá preenchida automáticamente, basta trocar o arquivo dentro
     do HREF. -->
     <title>Aprendendo HTML</title>
+    <style>
+        mark {
+            background-color: chartreuse;
+        }
+    </style>
 </head>
 <body>
     <h1>Olá, mundo!</h1>
@@ -58,5 +63,83 @@
     </p>
     <h5>Exemplo1</h5><h6>Exemplo2</h6>
     <h2>Sub-título2</h2>
+    <h2>Formatações de texto</h2>
+    <h3>Negrito</h3>
+    <p>A tag &lt;b&gt; formata um texto em <b>Negrito</b>.
+        Porém ela <b>não é semântica</b> para o HTML5.
+    </p>
+    <h3>Destaque</h3>
+    <p>A tag &lt;strong&gt; formata um texto em <strong>Destaque</strong>.
+        E ela <strong>é semântica</strong> para o HTML5.
+    </p>
+    <h3>Itálico</h3>
+    <p>A tag &lt;i&gt; formata um texto em <i>Itálico</i>.
+        Porém ela <i>não é semântica</i> para o HTML5.
+    </p>
+    <h3>Ênfase</h3>
+    <p>A tag &lt;em&gt; formata um texto em <em>Ênfase</em>.
+        E ela <em>é semântica</em> para o HTML5.
+    </p>
+<!-- As teclas de atalho CTRL+SHIFT+P e selecionar 'Emmet: 
+    Envolver com Abreviação' ajuda na formatação do código 
+    quando necessário inserir tags rapidamente entre um texto
+    selecionado.-->
+    <h3>Texto marcado</h3>
+    <p>Teste de <mark style="background-color: #5151ff;">
+        <!-- Um dos métodos de se usar o STYLE. Tornando essa
+        tag uma formatação única. -->
+        texto marcado</mark> para uma melhor formatação de 
+        texto no HTML. E para isso, utilizamos a tag &lt;mark&gt;.
+    </p>
+    <p>
+        Agora, para testar uma melhor formatação, <mark>
+        trabalharemos com o CSS</mark>. Assim poderemos 
+        padronizar melhor as formatações <mark>para facilitar
+        ajustes padrões no futuro</mark>.
+    </p>
+<!-- Na tag HEAD criamos a tag STYLE referênciando a tag MARK
+para padronizar a formatação em todas as tags MARK. Lembrando
+que STYLE é padrão CSS. -->
+    <h3>Texto grande e pequeno</h3>
+    <p>
+        Nesse tópico testaremos os tamanhos de texto. Faremos 
+        um teste com <big>textos grandes</big> e outro para 
+<!-- Tags em VERMELHO significam que estão obsoletas em novas
+atualizações do HTML, e irão cair em desuso futuramente. É
+recomendado a não utilização delas. -->
+<!-- Atualmente o ideal para aterações de tamanho assim é a 
+utilização do CSS para a formatação de tamanho do texto. -->
+        <small>textos pequenos</small>.
+    </p>
+    <h3>Texto deletado</h3>
+    <p>
+        Podemos marcar um texto de forma que o mesmo seja lido 
+        mas não considerado. <del>Portanto, é correto afirmar 
+        que o HTML é muito chato.</del> E para isso utilizamos 
+        a tag &lt;del&gt;.
+    </p>
+    <h3>Texto inserido</h3>
+    <p>
+        Também podemos marcar um texto de forma a dar ênfase e 
+        indicar que o mesmo texto foi adicionado. <ins>Portanto, 
+        estudar HTMl é incrível por possuir uma finalidade de 
+        recursos.</ins> E para isso utilizamos a tag &lt;ins&gt;. 
+        Ela <ins>é semântica</ins> no HTML5.
+    </p>
+    <h3>Texto sublinhado</h3>
+    <p>
+        Para sublinhar textos nós <u>utilizamos a tag &lt;u&gt;</u>. 
+        Porém ela <u>não é semântica</u> no HTML5.
+    </p>
+    <h3>Texto sobrescrito</h3>
+    <p>
+        Podemos <sup>sobrescrever</sup> alguma coisa, e para isso 
+        utilizamos a tag &lt;sup&gt;.
+    </p>
+    <h3>Texto subscrito</h3>
+    <p>
+        Também podemos <sub>subscrever</sub> alguma coisa, e para 
+        isso utilizamos a tag &lt;sub&gt;.
+    </p>
 </body>
 </html>
