@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../archives/html.ico" type="image/x-icon">
+    <title>Formatação</title>
+    <style>
+        mark {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tipos de Formatação do HTML</h1>
+    <p><a href="../index.html" rel="prev">Voltar</a></p>
+    <h2>Parágrafos e quebras de linha</h2>
+    <p>
+        Hoje nós aprenderemos a criar parágrafos e quebras de linha <br>
+        nos textos do HTML para poder formatar de forma correta os <br>
+        textos do site proposto e organizar de maneir correta.<br>
+        Para isso utilizamos as tags &lt;p&gt; &lt;/p&gt; e &lt;br&gt;. 
+        Onde &lt;p&gt; &lt;/p&gt; <br> criam um parágrafo e &lt;br&gt; cria 
+        uma quebra de linha.
+        <!-- 
+            [&lt;] LESS THAN (Menor que) / [&gt;] GREATER THAN (Maior que) 
+            Para não haver problemas com a depuração de código quando 
+            quiser inserir os sinais em formato de texto.
+        -->
+    </p>
+    <h2>Adição de símbolos</h2>
+    <p>&reg; &copy; &trade; &euro; &pound; &yen; &cent; &delta;</p>
+    <h3>Adição de emojis</h3>
+    <p>
+        Vamos buscar os códigos no site <a href="https://emojipedia.org/" 
+        target="_blank" rel="nofollow">emojipedia.org</a>.
+    </p>
+    <p>&#x1F60A;</p> <!-- &#x e complementa com a númeração do site. -->
+    <h2>Inserindo imagens</h2>
+    <p>
+        Vamos aprender a inserir imagens no HTML utilizando a tag 
+        &lt;img&gt;.
+    </p> 
+    <!-- 
+        Melhor apenas digitar IMG e dar ENTER, pois o VS CODE complementa 
+        o resto. 
+    -->
+    <img src="../archives/html.png" width="100" alt="Figura HTML">
+    <!-- 
+        Dentro das aspas do SRC aperte CTRL+ESPAÇO para selecionar imagem 
+        da raiz do projeto. 
+    -->
+    <p>
+        Agora vamos aprender a utilizar imagens de sites, através de 
+        links já existentes.
+    </p>
+    <img src="https://cdn-icons-png.flaticon.com/512/888/888859.png" 
+    width="100" alt="Logo HTML">
+    <!-- 
+        Basta colar o link da imagem nas aspas do SRC. Porém a imagem só 
+        aparece enquanto o servidor da imagem permanecer ativo e em conexão.
+     -->
+    <h2>Aprendendo a hierarquia de títulos</h2>
+    <pre>
+        <code>
+&lt;h1&gt;Título&lt;/h1&gt;
+    &lt;h2&gt;Sub-título1&lt;/h2&gt;
+        &lt;h3&gt;Índice&lt;/h3&gt;
+        &lt;p&gt;
+            Texto de teste para a formatação de exemplo da 
+            hierarquia de títulos da <u>tag &lt;hx&gt;</u>. <b>Onde x 
+            é um número de 1 a 6</b>.
+        &lt;/p&gt;
+            &lt;h4&gt;Sub-índice&lt;/h4&gt;
+            &lt;p&gt;
+                <i>Sendo 1 o maior nível e 6 o menor.</i>
+            &lt;/p&gt;
+                &lt;h5&gt;Exemplo1&lt;/h5&gt;
+                    &lt;h6&gt;Exemplo2&lt;/h6&gt;
+    &lt;h2&gt;Sub-título2&lt;/h2&gt;
+        </code>
+    </pre>
+    <h2>Formatações de texto</h2>
+    <h3>Negrito</h3>
+    <p>
+        A tag &lt;b&gt; formata um texto em <b>Negrito</b>.
+        Porém ela <b>não é semântica</b> para o HTML5.
+    </p>
+    <h3>Destaque</h3>
+    <p>
+        Já a tag &lt;strong&gt; formata um texto em <strong>Destaque</strong>.
+        E ela <strong>é semântica</strong> para o HTML5.
+    </p>
+    <h3>Itálico</h3>
+    <p>
+        A tag &lt;i&gt; formata um texto em <i>Itálico</i>.
+        Porém ela <i>não é semântica</i> para o HTML5.
+    </p>
+    <h3>Ênfase</h3>
+    <p>
+        Já a tag &lt;em&gt; formata um texto em <em>Ênfase</em>.
+        E ela <em>é semântica</em> para o HTML5.
+    </p>
+    <!-- 
+        As teclas de atalho CTRL+SHIFT+P e selecionar 'Emmet: 
+        Envolver com Abreviação' ajuda na formatação do código 
+        quando necessário inserir tags rapidamente entre um texto
+        selecionado.
+    -->
+    <h3>Texto marcado</h3>
+    <p>Teste de <mark style="background-color: #5151ff;">
+    <!-- 
+        Um dos métodos de se usar o STYLE. Tornando essa tag uma 
+        formatação única. 
+    -->
+        texto marcado</mark> para uma melhor formatação de 
+        texto no HTML. E para isso, utilizamos a tag &lt;mark&gt;.
+    </p>
+    <p>
+        Agora, para testar uma melhor formatação, <mark>
+        trabalharemos com o CSS</mark>. Assim poderemos 
+        padronizar melhor as formatações <mark>para facilitar
+        ajustes padrões no futuro</mark>.
+    </p>
+    <!-- 
+        Na tag HEAD criamos a tag STYLE referênciando a tag MARK
+        para padronizar a formatação em todas as tags MARK. Lembrando
+        que STYLE é padrão CSS. 
+    -->
+    <h3>Texto grande e pequeno</h3>
+    <p>
+        Nesse tópico testaremos os tamanhos de texto. Faremos 
+        um teste com <big>textos grandes</big> e outro para 
+        <!-- 
+            Tags em VERMELHO significam que estão obsoletas em novas
+            atualizações do HTML, e irão cair em desuso futuramente. É
+            recomendado a não utilização delas. 
+        -->
+        <!-- 
+            Atualmente o ideal para alterações de tamanho assim é a 
+            utilização do CSS para a formatação de tamanho do texto.
+        -->
+        <small>textos pequenos</small>.
+    </p>
+    <h3>Texto deletado</h3>
+    <p>
+        Podemos marcar um texto de forma que o mesmo seja lido 
+        mas não considerado. <del>Portanto, é correto afirmar 
+        que o HTML é muito chato.</del> E para isso utilizamos 
+        a tag &lt;del&gt;.
+    </p>
+    <h3>Texto inserido</h3>
+    <p>
+        Também podemos marcar um texto de forma a dar ênfase e 
+        indicar que o mesmo texto foi adicionado. <ins>Portanto, 
+        estudar HTMl é incrível por possuir uma finalidade de 
+        recursos.</ins> E para isso utilizamos a tag &lt;ins&gt;. 
+        Ela <ins>é semântica</ins> no HTML5.
+    </p>
+    <h3>Texto sublinhado</h3>
+    <p>
+        Para sublinhar textos nós <u>utilizamos a tag &lt;u&gt;</u>. 
+        Porém ela <u>não é semântica</u> no HTML5.
+    </p>
+    <h3>Texto sobrescrito</h3>
+    <p>
+        Podemos <sup>sobrescrever</sup> alguma coisa, e para isso 
+        utilizamos a tag &lt;sup&gt;.
+    </p>
+    <h3>Texto subscrito</h3>
+    <p>
+        Também podemos <sub>subscrever</sub> alguma coisa, e para 
+        isso utilizamos a tag &lt;sub&gt;.
+    </p>
+    <h3>Outras formatações</h3>
+    <h4>Código-fonte / Pré-formatação</h4>
+    <p>
+        Quando necessário uma <code>formatação de texto</code> para 
+        melhor visibilidade de código em escrita utilizamos a tag 
+        &lt;code&gt;. É uma fonte mono espaçada.
+    </p>
+    <pre>
+            A tag &lt;pre&gt; também é muito boa para formatações de
+            código, pois ela permite a organização conforme escrita aqui
+            na edição do código.
+    </pre>
+    <h4>Citações simples</h4>
+    <p>
+        Para citarmos qualquer coisa de terceiros, utilizamos a tag &lt;q&gt;. 
+        <br> Exemplo: <q>Você não é todo mundo.</q> (Mãe)
+    </p>
+    <h4>Citações completas</h4>
+    <p>
+        Para esse tipo de citação utilizamos a tag &lt;blockquote&gt;. 
+        <br> Exemplo:<br>
+        Segundo Maurício Samy Silva, no seu livro Fundamentos de HTML5 e CSS3<br>
+        <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=0">
+        <!-- 
+            O link não é exibido visualmente, mas ajuda bastante os gerenciadores
+            de busca no back-end. 
+        -->
+            HTML é a sigla em inglês para HyperText Markup Language, que, em
+            português, significa linguagem para marcação de hipertexto.
+        </blockquote>
+    </p>
+    <h4>Abreviações</h4>
+    <P>
+        Como nós estamos estudando <abbr title="HyperText Markup Language">HTML</abbr>, 
+        nós também conseguimos explicar abreviações utilizando a tag &lt;abbr&gt;
+    </P>
+    <h4>Texto invertido</h4>
+    <p>
+        Podemos também criar textos invertidos no HTML, utilizando a tag &lt;bdo&gt;.<br>
+        <bdo dir="rtl">Podemos também criar textos invertidos no HTML, utilizando a tag 
+        &lt;bdo&gt;.</bdo>
+    </p>
+    <p><a href="../index.html" rel="prev">Voltar</a></p>
+</body>
+</html>

@@ -5,255 +5,38 @@
     <meta charset="UTF-8"> <!-- Essa linha permite a acentuação -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="html.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="archives/html.ico" type="image/x-icon">
     <!-- A tag LINK esta sendo utilizada para inserir o ícone de 
     favorito no documento HTML. No VS CODE é muito simples, basta 
     digitar LINK e selecionar a opção com o complemento desejado.
     Virá preenchida automáticamente, basta trocar o arquivo dentro
     do HREF. -->
     <title>Aprendendo HTML</title>
-    <style>
-        mark {
-            background-color: chartreuse;
-        }
-    </style>
 </head>
 <body>
     <h1>Olá, mundo!</h1>
-    <p>Meu documento de teste para aprendizagem.</p>
-    <p>Seguiremos estudando para aprender a criar um site.</p>
-    <h2>Parágrafos e quebras de linha</h2>
-    <p>Hoje nós aprenderemos a criar parágrafos e quebras de linha <br>
-        nos textos do HTML para poder formatar de forma correta os <br>
-        textos do site proposto e organizar perfeitamente.<br>
-        Para isso utilizamos as tags &lt;p&gt; &lt;/p&gt; e &lt;br&gt;.
-        <!-- [&lt;] LESS THAN (Menor que) / [&gt;] GREATER THAN (Maior que) -->
-    </p>
-    <h2>Adição de símbolos</h2>
-    <p>&reg; &copy; &trade; &euro; &pound; &yen; &cent; &delta;</p>
-    <h3>Adição de emojis</h3>
-    <p>Vamos buscar os códigos no site emojipedia.org</p>
-    <p>&#x1F60A;</p> <!-- &#x e complementa com a númeração do site -->
-    <h2>Inserindo imagens</h2>
-    <p>Vamos aprender a inserir imagens no HTML utilizando a tag 
-        &lt;img&gt;.</p> 
-    <!-- Melhor apenas digitar IMG e dar ENTER, pois o VS CODE 
-        complementa o resto. -->
-    <img src="html.png" alt="Figura HTML">
-    <!-- Dentro das aspas do SRC aperte CTRL+ESPAÇO para selecionar
-    imagem da raiz do projeto. -->
-    <p>Agora vamos aprender a utilizar imagens de sites através de 
-        links já existentes.
-    </p>
-    <img src="https://cdn-icons-png.flaticon.com/512/888/888859.png" 
-    alt="Logo HTML">
-    <!-- Basta colar o link da imagem nas aspas do SRC. Porém a imagem
-    só aparece enquanto o servidor da imagem permanecer ativo e em 
-    conexão. -->
-    <h2>Aprendendo a hierarquia de títulos</h2>
-    <h1>Título</h1>
-    <h2>Sub-título1</h2>
-    <h3>Índice</h3>
-    <p>Texto de teste para a formatação de exemplo da hierarquia
-        de títulos.
-    </p>
-    <h4>Sub-índice</h4>
-    <p>Essa tag varia de 1 a 6 níveis de tamanho, sendo 1 o 
-        maior e 6 a menor.
-    </p>
-    <h5>Exemplo1</h5><h6>Exemplo2</h6>
-    <h2>Sub-título2</h2>
-    <h2>Formatações de texto</h2>
-    <h3>Negrito</h3>
-    <p>A tag &lt;b&gt; formata um texto em <b>Negrito</b>.
-        Porém ela <b>não é semântica</b> para o HTML5.
-    </p>
-    <h3>Destaque</h3>
-    <p>A tag &lt;strong&gt; formata um texto em <strong>Destaque</strong>.
-        E ela <strong>é semântica</strong> para o HTML5.
-    </p>
-    <h3>Itálico</h3>
-    <p>A tag &lt;i&gt; formata um texto em <i>Itálico</i>.
-        Porém ela <i>não é semântica</i> para o HTML5.
-    </p>
-    <h3>Ênfase</h3>
-    <p>A tag &lt;em&gt; formata um texto em <em>Ênfase</em>.
-        E ela <em>é semântica</em> para o HTML5.
-    </p>
-<!-- As teclas de atalho CTRL+SHIFT+P e selecionar 'Emmet: 
-    Envolver com Abreviação' ajuda na formatação do código 
-    quando necessário inserir tags rapidamente entre um texto
-    selecionado.-->
-    <h3>Texto marcado</h3>
-    <p>Teste de <mark style="background-color: #5151ff;">
-        <!-- Um dos métodos de se usar o STYLE. Tornando essa
-        tag uma formatação única. -->
-        texto marcado</mark> para uma melhor formatação de 
-        texto no HTML. E para isso, utilizamos a tag &lt;mark&gt;.
-    </p>
     <p>
-        Agora, para testar uma melhor formatação, <mark>
-        trabalharemos com o CSS</mark>. Assim poderemos 
-        padronizar melhor as formatações <mark>para facilitar
-        ajustes padrões no futuro</mark>.
-    </p>
-<!-- Na tag HEAD criamos a tag STYLE referênciando a tag MARK
-para padronizar a formatação em todas as tags MARK. Lembrando
-que STYLE é padrão CSS. -->
-    <h3>Texto grande e pequeno</h3>
-    <p>
-        Nesse tópico testaremos os tamanhos de texto. Faremos 
-        um teste com <big>textos grandes</big> e outro para 
-<!-- Tags em VERMELHO significam que estão obsoletas em novas
-atualizações do HTML, e irão cair em desuso futuramente. É
-recomendado a não utilização delas. -->
-<!-- Atualmente o ideal para aterações de tamanho assim é a 
-utilização do CSS para a formatação de tamanho do texto. -->
-        <small>textos pequenos</small>.
-    </p>
-    <h3>Texto deletado</h3>
-    <p>
-        Podemos marcar um texto de forma que o mesmo seja lido 
-        mas não considerado. <del>Portanto, é correto afirmar 
-        que o HTML é muito chato.</del> E para isso utilizamos 
-        a tag &lt;del&gt;.
-    </p>
-    <h3>Texto inserido</h3>
-    <p>
-        Também podemos marcar um texto de forma a dar ênfase e 
-        indicar que o mesmo texto foi adicionado. <ins>Portanto, 
-        estudar HTMl é incrível por possuir uma finalidade de 
-        recursos.</ins> E para isso utilizamos a tag &lt;ins&gt;. 
-        Ela <ins>é semântica</ins> no HTML5.
-    </p>
-    <h3>Texto sublinhado</h3>
-    <p>
-        Para sublinhar textos nós <u>utilizamos a tag &lt;u&gt;</u>. 
-        Porém ela <u>não é semântica</u> no HTML5.
-    </p>
-    <h3>Texto sobrescrito</h3>
-    <p>
-        Podemos <sup>sobrescrever</sup> alguma coisa, e para isso 
-        utilizamos a tag &lt;sup&gt;.
-    </p>
-    <h3>Texto subscrito</h3>
-    <p>
-        Também podemos <sub>subscrever</sub> alguma coisa, e para 
-        isso utilizamos a tag &lt;sub&gt;.
-    </p>
-    <h3>Outras formatações</h3>
-    <h4>Código-fonte / Pré-formatação</h4>
-    <p>
-        Quando necessário uma <code>formatação de texto</code> para 
-        melhor visibilidade de código em escrita utilizamos a tag 
-        &lt;code&gt;. É uma fonte mono espaçada.
-    </p>
-    <pre>
-            A tag &lt;pre&gt; também é muito boa para formatações de
-            código, pois ela permite a organização conforme escrita aqui
-            na edição do código.
-    </pre>
-    <h4>Citações simples</h4>
-    <p>
-        Para citarmos qualquer coisa de terceiros, utilizamos a tag &lt;q&gt;. 
-        Exemplo: <q>Você não é todo mundo.</q> (Mãe)
-    </p>
-    <h4>Citações completas</h4>
-    <p>
-        Para esse tipo de citação utilizamos a tag &lt;blockquote&gt;. 
-        Exemplo:<br>
-        Segundo Maurício Samy Silva, no seu livro Fundamentos de HTML5 e CSS3<br>
-        <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=0">
-        <!-- O link não é exibido visualmente, mas ajuda bastante os gerenciadores
-        de busca no back-end. -->
-            HTML é a sigla em inglês para HyperText Markup Language, que, em
-            português, significa linguagem para marcação de hipertexto.
-        </blockquote>
-    </p>
-    <h4>Abreviações</h4>
-    <P>
-        Como nós estamos estudando <abbr title="HyperText Markup Language">HTML</abbr>, 
-        nós também conseguimos explicar abreviações utilizando a tag &lt;abbr&gt;
-    </P>
-    <h4>Texto invertido</h4>
-    <p>
-        Podemos também criar textos invertidos no HTML, utilizando a tag &lt;bdo&gt;.<br>
-        <bdo dir="rtl">Podemos também criar textos invertidos no HTML, utilizando a tag 
-        &lt;bdo&gt;.</bdo>
-    </p>
-    <h2>Utilização de listas</h2>
-    <h3>Listas ordenadas</h3>
-    <p>
-        Para ordenar listas utilizamos a tag &lt;ol&gt;. E cada item da lista precisa 
-        da tag &lt;li&gt; para ser entendido como item dessa lista. <br>
-        Exemplo:
-    </p>  
-    <p>Tarefas do dia</p>      
-    <ol type="A" start="4">
-    <!-- O TYPE formata o índice de ordenação e o START é a partir de qual começará.-->
-        <li>Acordar</li>
-        <li>Lavar garagem</li>
-        <li>Dar banho no cachorro</li>
-        <li>Estudar para a prova</li>
-    </ol>
-
-    <h3>Listas não ordenadas</h3>
-    <p>
-        Para listas não ordenadas utilizamos a tag &lt;ul&gt;. E para cada item ainda 
-        utilizamos a tag &lt;li&gt;. <br>
-        Exemplo:
-    </p>
-    <p>Lista de compras</p>
-    <ul type="SQUARE">
-    <!-- O TYPE aqui possuí apenas 3 opções: DISC[Padrão], CIRCLE e SQUARE. -->
-        <li>Arroz</li>
-        <li>Feijão</li>
-        <li>Tomate</li>
-        <li>Cebola</li>
-        <li>Carne</li>
-    </ul>
-    <h3>Listas de definição</h3>
-    <p>
-        Para listas de definições nós utilizamos a tag &lt;dl&gt;. Onde os itens possuem
-        texto, utilizando a tag &lt;dt&gt;, e descrição, utilizando a tag &lt;dd&gt;. <br>
-        Exemplo:
+        Este é o meu documento de teste para aprendizagem de HTML. Espero que 
+        gostem e que seja de grande ajuda para o estudo de vocês também. Um 
+        forte abraço pra vocês e bons estudos.
     </p>
     <dl>
-        <dt>HTML</dt>
-        <dd>Linguagem de marcação para a criação de conteúdo de um site.</dd>
-        <dt>CSS</dt>
-        <dd>Linguagem de marcação para a criação de design de um site.</dd>
-        <dt>JavaScript</dt>
-        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+        <dt><a href="pages/pagFormat.html" rel="next">FORMATAÇÃO</a></dt>
+        <dd>
+            Nessa página aprenderemos os tipos de formatação para poder usar 
+            na sua página HTML.
+        </dd>
+        <dt><a href="pages/pagList.html" rel="next">LISTAS</a></dt>
+        <dd>
+            Nesta página aprenderemos os tipos de listas que podemos utilizar 
+            no HTML.
+        </dd>
+        <dt><a href="pages/pagLinks.html" rel="next">LINKS</a></dt>
+        <dd>
+            Nesta página aprenderemos como ancorar páginas tanto internas 
+            quanto externas, e também a descarregar arquivos.
+        </dd>
     </dl>
-    <h2>Trabalhando com links</h2>
-    <h3>Links externos</h3>
-    <p>
-        Acesse <a href="https://github.com/derikpimentel" target="_blank" rel="external">
-        <!-- O TARGET me permite alterar o jeito de abrir o link. -->
-        <!-- O REL é apenas uma referência para o gerênciador de busca no back-end. Dizer
-        EXTERNAL significa que é uma referência externa, mas caso não queira dar essa 
-        referência basta escrever NOFOLLOW pois assim o gerênciador de busca não dá sequência. -->    
-        meu perfil</a> no GitHub. Lá você pode aprender como utilizar a tag &lt;a&gt; 
-        para criar um link de referência externa. O ideal de abrir sites externos, é abrir 
-        los em uma nova aba.
-    </p>
-    <h3>Links internos</h3>
-    <p>
-        <a href="pagTestLink.html" rel="next">Clique aqui</a> para um link de página interna.
-        <!-- Caso trabalhe com pastas e queira voltar, basta acrescentar pontos antes do 
-        arquivo. EX.: "../index.html" -->
-    </p>
-    <h3>Links para download</h3>
-    <p>
-        <a href="archives/Arquivo de teste para download.pdf" 
-        download="Arquivo%de%teste%para%download.pdf" type="application/pdf">
-        <!-- o TYPE possuí uma lista para os tipos de arquivo no site 
-        https://www.iana.org/assignments/media-types/media-types.xhtml -->
-        Clique aqui</a> para baixar o arquivo. Caso pareça não estar funcionando com o PDF 
-        <a href="archives/Arquivo de teste para download.zip"
-        download="Arquivo%de%teste%para%download.zip" type="application/zip">
-        clique aqui</a> e teste no formato ZIP.
-    </p>
+    
 </body>
 </html>

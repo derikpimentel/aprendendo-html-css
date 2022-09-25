@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../archives/html.ico" type="image/x-icon">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Trabalhando com links</h1>
+    <p><a href="../index.html" rel="prev">Voltar</a></p>
+    <h2>Links externos</h2>
+    <p>
+        Acesse <a href="https://github.com/derikpimentel" target="_blank" 
+        rel="external">
+        <!-- O TARGET me permite alterar o jeito de abrir o link. -->
+        <!-- 
+            O REL é apenas uma referência para o gerênciador de busca no 
+            back-end. Dizer EXTERNAL significa que é uma referência externa, 
+            mas caso não queira dar essa referência basta escrever NOFOLLOW 
+            pois assim o gerênciador de busca não dá sequência. 
+        -->    
+        meu perfil</a> no GitHub. Lá você pode aprender como utilizar a 
+        tag &lt;a&gt; para criar um link de referência externa. O ideal 
+        de abrir sites externos, é carrega-los em uma nova aba.
+    </p>
+    <h2>Links internos</h2>
+    <p>
+        <a href="pagTestLink.html" rel="next">Clique aqui</a> para um link de 
+        página interna.
+        <!-- 
+            Caso trabalhe com pastas e queira voltar, basta acrescentar pontos 
+            antes do arquivo. EX.: "../index.html" 
+        -->
+    </p>
+    <h2>Links para download</h2>
+    <p>
+        <a href="../archives/Arquivo de teste para download.pdf" 
+        download="Arquivo%de%teste%para%download.pdf" type="application/pdf">
+        <!-- 
+            O TYPE possuí uma lista para os tipos de arquivo no site 
+            https://www.iana.org/assignments/media-types/media-types.xhtml 
+        -->
+        Clique aqui</a> para baixar o arquivo. Caso pareça não estar funcionando 
+        com o PDF 
+        <a href="../archives/Arquivo de teste para download.zip"
+        download="Arquivo%de%teste%para%download.zip" type="application/zip">
+        clique aqui</a> e teste no formato ZIP.
+    </p>
+    <p><a href="../index.html" rel="prev">Voltar</a></p>
+</body>
+</html>
