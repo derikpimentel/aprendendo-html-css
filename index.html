@@ -181,8 +181,8 @@ utilização do CSS para a formatação de tamanho do texto. -->
         <bdo dir="rtl">Podemos também criar textos invertidos no HTML, utilizando a tag 
         &lt;bdo&gt;.</bdo>
     </p>
-    <h3>Utilização de listas</h3>
-    <h4>Listas ordenadas</h4>
+    <h2>Utilização de listas</h2>
+    <h3>Listas ordenadas</h3>
     <p>
         Para ordenar listas utilizamos a tag &lt;ol&gt;. E cada item da lista precisa 
         da tag &lt;li&gt; para ser entendido como item dessa lista. <br>
@@ -197,7 +197,7 @@ utilização do CSS para a formatação de tamanho do texto. -->
         <li>Estudar para a prova</li>
     </ol>
 
-    <h4>Listas não ordenadas</h4>
+    <h3>Listas não ordenadas</h3>
     <p>
         Para listas não ordenadas utilizamos a tag &lt;ul&gt;. E para cada item ainda 
         utilizamos a tag &lt;li&gt;. <br>
@@ -212,7 +212,7 @@ utilização do CSS para a formatação de tamanho do texto. -->
         <li>Cebola</li>
         <li>Carne</li>
     </ul>
-    <h4>Listas de definição</h4>
+    <h3>Listas de definição</h3>
     <p>
         Para listas de definições nós utilizamos a tag &lt;dl&gt;. Onde os itens possuem
         texto, utilizando a tag &lt;dt&gt;, e descrição, utilizando a tag &lt;dd&gt;. <br>
@@ -226,6 +226,34 @@ utilização do CSS para a formatação de tamanho do texto. -->
         <dt>JavaScript</dt>
         <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
     </dl>
-    
+    <h2>Trabalhando com links</h2>
+    <h3>Links externos</h3>
+    <p>
+        Acesse <a href="https://github.com/derikpimentel" target="_blank" rel="external">
+        <!-- O TARGET me permite alterar o jeito de abrir o link. -->
+        <!-- O REL é apenas uma referência para o gerênciador de busca no back-end. Dizer
+        EXTERNAL significa que é uma referência externa, mas caso não queira dar essa 
+        referência basta escrever NOFOLLOW pois assim o gerênciador de busca não dá sequência. -->    
+        meu perfil</a> no GitHub. Lá você pode aprender como utilizar a tag &lt;a&gt; 
+        para criar um link de referência externa. O ideal de abrir sites externos, é abrir 
+        los em uma nova aba.
+    </p>
+    <h3>Links internos</h3>
+    <p>
+        <a href="pagTestLink.html" rel="next">Clique aqui</a> para um link de página interna.
+        <!-- Caso trabalhe com pastas e queira voltar, basta acrescentar pontos antes do 
+        arquivo. EX.: "../index.html" -->
+    </p>
+    <h3>Links para download</h3>
+    <p>
+        <a href="archives/Arquivo de teste para download.pdf" 
+        download="Arquivo%de%teste%para%download.pdf" type="application/pdf">
+        <!-- o TYPE possuí uma lista para os tipos de arquivo no site 
+        https://www.iana.org/assignments/media-types/media-types.xhtml -->
+        Clique aqui</a> para baixar o arquivo. Caso pareça não estar funcionando com o PDF 
+        <a href="archives/Arquivo de teste para download.zip"
+        download="Arquivo%de%teste%para%download.zip" type="application/zip">
+        clique aqui</a> e teste no formato ZIP.
+    </p>
 </body>
 </html>
