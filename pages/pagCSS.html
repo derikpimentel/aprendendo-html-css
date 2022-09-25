@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos CSS</title>
+    <link rel="stylesheet" href="../style.css">
+    <!-- 
+        Também podemos ancorar mais arquivos, utilizando mais formatações.
+        <link rel="stylesheet" href="../styleExtra.css">
+    -->
+    <!-- Melhor método para reutilizar em mais páginas HTML. -->
+    <Style>
+        #config1{
+            font-size: 22px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        /* Configuração por parametro ID */
+        /*
+            .config2{
+                font-size: 8px;
+                background-color: green;
+                color: black;
+                text-align: center;
+            }
+        */
+        /* Configuração por parametro CLASS */
+        /* ID >>> CLASS na ordem de precedência. */
+        /* 
+            p{
+                font-size: 38px;
+                background-color: blue;
+                color: white;
+                text-align: justify;
+            }
+        */
+        /* 
+            Dessa forma se padroniza todas as tag <p> que forem utilizadas
+            no código. 
+        */
+    </Style>
+    <!-- 
+        Aqui dentro é criado um estilo CSS padrão global. Nas tags é necessário
+        o parametro ID para selecionar a configuração global. A desvantagem 
+        desse método é que configura apenas para este documento.
+    -->
+</head>
+<body>
+    <h1>Aprendendo os Estilos CSS</h1>
+    <h2>Estilo inline</h2>
+    <!-- Utilizar em casos específicos! Raros! -->
+    <p>
+        Nesta página aprenderemos a formatar o HTML com os estilos CSS. 
+        O primeiro método é o Inline, que nos ajudará a ter o primeiro 
+        contato com o CSS.
+    </p>
+    <p style="color:white; background-color: red; font-family: Arial, Helvetica, sans-serif; text-align: justify; font-size: 20px;">
+        Neste nosso exemplo, o plano de fundo desse parágrafo precisa 
+        estar vermelho para validar o código. Pois no método inline, o 
+        estilo CSS é adicionado ao início da tag com o parametro STYLE. 
+        Em seguida alteramos cor, fonte, tamanho e alinhamento.
+    </p>
+    <h2>Estilo interno/local</h2>
+    <!-- Utilizar em casos únicos! Apenas naquela página. -->
+    <p class="config1" id="config1">
+    <!-- Note que o termo ID prevaleceu sobre o CLASS. -->
+        Aqui vemos um exemplo de como funciona uma configuração criada 
+        para padronizar algumas tags. Aqui referênciamos um ID para 
+        afetar apenas as tags com o mesmo ID. Esse ID é configurado no 
+        STYLE na tag &lt;head&gt; do HTML.
+    </p>
+    <h2>Estilos externos</h2>
+    <!-- Uso padrão ideal! -->
+    <p class="config1">
+        Nesse método aprendemos a utilizar um arquivo CSS com padrões 
+        já criados para uma reutilização em mais páginas ao invés de 
+        editar em apenas um documento. <br>
+        Aqui vemos que não apenas este parágrafo foi formatado, mas 
+        também os títulos, sub-títulos e cor de fundo.
+    </p>
+</body>
+</html>

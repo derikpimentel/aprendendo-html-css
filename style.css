@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* 
+    Tudo que se iniciar com o caracter '@' é considerado 
+    como regra pelo CSS
+*/
+
+.config1{
+    font-size: 30px;
+    background-color: brown;
+    color: white;
+    text-align: right;
+}
+
+h1{
+    font-size: 72px;
+}
+
+h2{
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: blue;
+}
