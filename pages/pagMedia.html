@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../archives/html.ico" type="image/x-icon">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Trabalhando com Arquivos de Mídia</h1>
+    <p><a href="../index.html" rel="prev">Voltar</a></p>
+    <h2>Imagem dinâmica</h2>
+    <p>
+        A tag &lt;picture&gt; nos permite trabalhar com imagens de formas 
+        variadas. Hoje aprenderemos a usar a tag &lt;source&gt; dentro da 
+        tag &lt;picture&gt;, ela nos permite manipular as imagens dependendo 
+        do tamanho do navegador aberto.
+    </p>
+    <picture>
+        <source media="(max-width: 799px)" srcset="../archives/html.png" 
+        type="image/png">
+        <!-- Os arquivos menores sempre antes na ordem de precedência. -->
+        <source media="(max-width: 1049px)" srcset="../archives/html_b.jpg" 
+        type="image/jpg">
+        <!--
+            A MEDIA permite controlar o tamanho máximo para realizar a troca,
+            enquanto o SRCSET encontra o endereço do arquivo (o atalho
+            CTRL+ESPAÇO não funciona no SRCSET).
+        -->
+        <img src="../archives/html.jpg" alt="Imagem do HTML">
+    </picture>
+    <h2>Reproduzindo aúdio</h2>
+    <p>
+        Aqui aprenderemos a utilizar a tag &lt;audio&gt; para inserir um 
+        arquivo de aúdio na página.
+    </p>
+    <audio src="../archives/audio_woodpecker.mp3" controls autoplay></audio>
+    <!-- AUTOPLAY não funcionou. -->
+    <!-- Formatos de aúdio compatíveis: MP3, WAV e OGG. -->
+    <h3>Controle de formatos</h3>
+    <p>
+        Para esse aqui não teremos como testar, mas fica a dica para driblar 
+        falhas de execução de aúdio. Apenas visível no back-end! Pois mostra 
+        a utilização novamente da tag &lt;source&gt; só que dessa vez para 
+        aúdio.
+    </p>
+    <audio preload="metadata" controls loop>
+    <!-- O LOOP faz com que o aúdio execute novamente automáticamente.-->
+    <!--
+        O PRELOAD controla o modo de como o site carregará o arquivo de aúdio.
+        A opção AUTO[Padrão] carrega o aúdio junto com a página, a opção 
+        METADATA carrega primeiro a página e depois o aúdio e por último a 
+        opção NONE que carrega o aúdio ao tentar executá-lo.
+    -->
+        <source src="exemplo.mp3" type="audio/mpeg">
+        <source src="exemplo.ogg" type="audio/ogg">
+        <source src="exemplo.wav" type="audio/wav"> <!-- Não usar WAV -->
+        <p>
+            Seu navegador não tem compatibilidade com arquivos de aúdio.
+        </p>
+    </audio>
+    <h2>Utilizando vídeos</h2>
+    <!--
+        É necessário atenção! Pois vídeos costumam ser arquivos muito pesados,
+        então é necessário cautela para não sobrecarregar a página e servidor.
+    -->
+    <h3>Vídeos internos</h3>
+    <p>
+        Aprenderemos aqui a utilizar a tag &lt;video&gt; para inserir vídeos 
+        em nossa página HTML.
+    </p>
+    <video src="../archives/html.mp4" controls></video>
+    <h4>Controle de formatos</h4>
+    <p>
+        Da mesma forma que foram feitos com o aúdio e a imagem, também podemos
+        utilizar a tag &lt;source&gt; nos vídeos. Apenas será visível no 
+        back-end!
+    </p>
+    <video poster="../archives/html.png" width="450" controls>
+    <!-- O POSTER insere uma imagem como capa. -->
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.m4v" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        <source src="video.ogv" type="video/ogg">
+        <p>
+            Seu navegador não suporta arquivos de vídeos.
+        </p>
+    </video>
+    <h3>Vídeos externos</h3>
+    <p>
+        Aprenderemos a inserir vídeos de sites externos, para uma melhor 
+        performance e custeio de hospedagem. Para o exemplo utilizaremos
+        vídeos do YouTube, pois o site já compartilha um código pronto 
+        de forma prática para facilitar nossa vida.
+    </p>
+    <iframe width="448" height="252" 
+    src="https://www.youtube.com/embed/FdE5G95B7Mg" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+    <p>
+        Outra opção padrão é o site Vimeo.
+    </p>
+    <iframe src="https://player.vimeo.com/video/257399106?h=b4f1975b25" 
+    width="450" height="253" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" 
+    allowfullscreen></iframe>
+    <p>
+        <a href="https://vimeo.com/257399106" target="_blank" 
+        rel="nofollow">ANIMATION REEL</a> from 
+        <a href="https://vimeo.com/user41011146" target="_blank" 
+        rel="nofollow">Karol Szczepankiewicz</a> on 
+        <a href="https://vimeo.com" target="_blank" rel="nofollow">
+            Vimeo
+        </a>.
+    </p>
+    <p><a href="../index.html" rel="prev">Voltar</a></p>
+</body>
+</html>
